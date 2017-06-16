@@ -5,11 +5,11 @@ package Command;
  */
 public class Keypad {
 
-    private Command.Command playCmd;
-    private Command.Command rewindCmd;
-    private Command.Command stopCmd;
+    private Command playCmd;
+    private Command rewindCmd;
+    private Command stopCmd;
 
-    public Keypad(Command.Command playCmd, Command.Command rewindCmd, Command.Command stopCmd) {
+    public Keypad(Command playCmd, Command rewindCmd, Command stopCmd) {
         this.playCmd = playCmd;
         this.rewindCmd = rewindCmd;
         this.stopCmd = stopCmd;

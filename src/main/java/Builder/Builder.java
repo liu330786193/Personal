@@ -9,6 +9,6 @@ public interface Builder {
 
     void buildPart2();
 
-    Builder.Product retrieveResult();
+    Product retrieveResult();
 
 }

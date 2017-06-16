@@ -3,11 +3,11 @@ package Command;
 /**
  * Created by lyl on 2017/4/24.
  */
-public class RewindCommand implements Command.Command {
+public class RewindCommand implements Command {
 
-    private Command.AudioPlayer audioPlayer;
+    private AudioPlayer audioPlayer;
 
-    public RewindCommand(Command.AudioPlayer audioPlayer) {
+    public RewindCommand(AudioPlayer audioPlayer) {
         this.audioPlayer = audioPlayer;
     }
 

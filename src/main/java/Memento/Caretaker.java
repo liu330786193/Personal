@@ -5,13 +5,13 @@ package Memento;
  */
 public class Caretaker {
 
-    private Memento.Memento memento;
+    private Memento memento;
 
-    public Memento.Memento retrieveMemento(){
+    public Memento retrieveMemento(){
         return this.memento;
     }
 
-    public void saveMemento(Memento.Memento memento){
+    public void saveMemento(Memento memento){
         this.memento = memento;
     }
 

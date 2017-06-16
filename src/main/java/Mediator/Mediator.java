@@ -5,7 +5,7 @@ package Mediator;
  */
 public abstract class Mediator {
 
-    public abstract void colleagueChanged(Mediator.Colleague c);
+    public abstract void colleagueChanged(Colleague c);
 
 
 

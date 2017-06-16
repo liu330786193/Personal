@@ -1,14 +1,11 @@
 package Composite.Draw;
 
-import org.junit.Test;
-
 /**
  * Created by lyl on 2017/4/17.
  */
 public class Main {
 
-    @Test
-    public void test(){
+    public static void main(String[] args) {
         Picture picture = new Picture();
         picture.add(new Circle());
         picture.add(new Line());

@@ -5,7 +5,7 @@ package Memento;
  */
 public class Client {
 
-    private static Memento.Originator o = new Memento.Originator();
+    private static Originator o = new Originator();
     private static Caretaker c = new Caretaker();
 
     public static void main(String[] args) {

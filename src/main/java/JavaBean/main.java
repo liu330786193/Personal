@@ -1,13 +1,15 @@
 package JavaBean;
 
-import org.junit.Test;
-
 /**
  * Created by lyl on 2017/4/13.
  */
 public class main {
 
-    @Test
+    public static void main(String[] args) throws Exception {
+        new main().test();
+        new main().test1();
+    }
+
     public void test() throws CloneNotSupportedException {
         User user = new User();
         user.setAge(21);
@@ -27,7 +29,6 @@ public class main {
         System.out.println(user.getBaby().getAge());
     }
 
-    @Test
     public void test1() throws Exception {
         User user = new User();
         user.setAge(21);

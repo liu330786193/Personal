@@ -5,9 +5,9 @@ package Observer;
  */
 public interface Subject {
 
-    void attach(Observer.Observer observer);
+    void attach(Observer observer);
 
-    void detach(Observer.Observer observer);
+    void detach(Observer observer);
 
     void notifyObservers();
 

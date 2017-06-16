@@ -19,7 +19,7 @@ public class VectorProxy implements InvocationHandler {
 
     public static Object factory(Object obj){
         Class cls = obj.getClass();
-        return Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), new Proxy.VectorProxy(obj));
+        return Proxy.newProxyInstance(cls.getClassLoader(), cls.getInterfaces(), new VectorProxy(obj));
     }
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
@@ -70,7 +70,7 @@ public class VectorProxy implements InvocationHandler {
 
     public static void main(String[] args){
         List v = null;
-        v = (List) Proxy.VectorProxy.getProxyInstance(Vector.class);
+        v = (List) VectorProxy.getProxyInstance(Vector.class);
         v.add("new");
         v.add("York");
     }

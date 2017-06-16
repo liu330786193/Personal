@@ -1,13 +1,12 @@
 package Prototype.Reg;
 
 import Prototype.Original.Prototype;
-import Prototype.Prototype;
 
 /**
  * Created by lyl on 2017/4/14.
  */
 public class ConcretePrototype implements Prototype {
-    public synchronized Object clone() {
+    public synchronized Prototype clone() {
         Prototype temp = null;
         try {
             temp = (Prototype) super.clone();

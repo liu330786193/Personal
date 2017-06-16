@@ -15,14 +15,14 @@ public class ConcreteSubject implements Subject {
     }
 
     @Override
-    public void attach(Observer.Observer observer) {
+    public void attach(Observer observer) {
         if (!observerVector.contains(observer)){
             observerVector.addElement(observer);
         }
     }
 
     @Override
-    public void detach(Observer.Observer observer) {
+    public void detach(Observer observer) {
         if (observerVector.contains(observer)){
             observerVector.removeElement(observer);
         }
@@ -32,7 +32,7 @@ public class ConcreteSubject implements Subject {
     public void notifyObservers() {
         Enumeration enumeration = observers();
         while (enumeration.hasMoreElements()){
-            ((Observer.Observer)enumeration.nextElement()).update();
+            ((Observer)enumeration.nextElement()).update();
         }
     }
 

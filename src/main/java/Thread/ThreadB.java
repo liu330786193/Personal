@@ -5,9 +5,9 @@ package Thread;
  */
 public class ThreadB extends Thread {
 
-    private Thread.ConditionService conditionService;
+    private ConditionService conditionService;
 
-    public ThreadB(Thread.ConditionService service){
+    public ThreadB(ConditionService service){
         super();
         this.conditionService = service;
     }

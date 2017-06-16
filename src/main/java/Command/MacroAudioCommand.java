@@ -7,7 +7,7 @@ import java.util.Vector;
  */
 public class MacroAudioCommand implements MacroCommand {
 
-    private Vector<Command.Command> cmdList = new Vector();
+    private Vector<Command> cmdList = new Vector();
 
     @Override
     public void execute() {
@@ -15,12 +15,12 @@ public class MacroAudioCommand implements MacroCommand {
     }
 
     @Override
-    public void remove(Command.Command command) {
+    public void remove(Command command) {
         cmdList.removeElement(command);
     }
 
     @Override
-    public void add(Command.Command command) {
+    public void add(Command command) {
         cmdList.addElement(command);
     }
 }
